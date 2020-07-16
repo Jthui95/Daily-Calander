@@ -5,7 +5,7 @@ This project utilizes javascript and moment.js to allow users to dynamically add
 My hope was to create a useful web api that will give users an easier way to keep track of their busy lives.
 
 ## Screenshots
-
+![Project](/Daily-Calander/example.png "Example")
 ## Features
 Utilizes local storage to keep track of your tasks.
 Dynamically changes so you know what you have next.
