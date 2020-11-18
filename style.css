@@ -1,39 +1,86 @@
-header{
+.jumbotron{
+    text-align:center;
     background: #333333;
     outline: 1px solid black;
     color:#fff;
     padding:20px;
-    text-align: center;
     border-bottom: 4px #000 solid;
     margin-bottom: 10px;
 }
 
-input[type="text"] {
-    padding: 10px 16px;
-    font-size: 16px;
-    color: var(--black);
-    background-color: #fff;
-    border: 1px solid #597183;
-    border-radius: 8px;
-    margin-top: 5px;
-    width: 100%;
-    transition: all 0.3s ease;
-  }
-  
-  input[type="text"]:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(21, 156, 228, 0.4);
-  }
+body{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
 
-tr {
+.container {
+  float:center;
+  width: 100%;
+  height: 100%
+}
 
-    padding: 10px 16px;
-    font-size: 16px;
-    color: var(--black);
-    background-color: #fff;
-    border: 1px solid #597183;
-    border-radius: 8px;
-    margin-top: 5px;
-    width: 100%;
-    transition: all 0.3s ease;
-  }
+.row{
+  white-space: pre-wrap;
+  height: 100px;
+  justify-content: center;
+}
+
+.info{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-top: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  padding-top: 15px;
+  font-size: 20px;
+  width:10vw;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  font-weight: bold;
+  border-left: 1px solid black;
+  border-top: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  padding: 10px;
+  width: 55vw; 
+}
+
+
+.past {
+  background-color: lightgrey;
+  color: black;
+}
+
+.present {
+  background-color: #ff6666;
+  color: black;
+}
+
+.future {
+  background-color: #ffff99 ;
+  color: black;
+}
+
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: darkgrey;
+  color: white;
+  opacity: 1;
+  font-size: 25px;
+}
+
+.saveBtn:Hover {
+  font-size: 35px;
+  opacity: 0.6;
+  transition: all .3s ease-in-out;
+}

@@ -6,104 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous">
     <title>Daily Calander</title>
     <!--Style Sheet-->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-        <header>
-            <h1>Daily Calander</h1>
-        </header>
-        <div class = "table-rsponsive" id ="table">
-            <table class="table">
-              <caption>Created by Jonathan Hui</caption>
-              <tbody>
-                <tr>
-                  <th scope="row">8am</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">9am</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">10am</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">11am</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">12pm</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">1pm</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2pm</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <var>   <tr>
-                  <th scope="row">3pm</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr></var>
-                <tr>
-                  <th scope="row">4pm</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">5pm</th>
-                  <td>
-                    <form id="input-form" method="POST"></form>
-                    <input type ="text" placeholder = "" name="cal-text" id = "cal-text">
-                  </td>
-                </tr>
-              </tbody>
-              <p>Items Left: <span id ="daily-tasks">0</span></p>
-            </table>
-          
-            
-        </div>
-             
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <header class="jumbotron">
+            <h1 class="display-3">Daily Calander</h1>
+            <p id="currentDay" class="lead"></p>
+        </header>
+
+        <!--Time Table-->
+        <div class="container">
+          <div class="row">
+            <div class="time-block">9am</div>
+            <textarea id="slot1" class="info"></textarea>
+            <button id="saveSlot1" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">10am</div>
+            <textarea id="slot2" class="info"></textarea>
+            <button id="saveSlot2" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">11am</div>
+            <textarea id="slot3" class="info"></textarea>
+            <button id="saveSlot3" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">12pm</div>
+            <textarea id="slot4" class="info"></textarea>
+            <button id="saveSlot4" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">1pm</div>
+            <textarea id="slot5" class="info"></textarea>
+            <button id="saveSlot5" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">2pm</div>
+            <textarea id="slot6" class="info"></textarea>
+            <button id="saveSlot6" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">3pm</div>
+            <textarea id="slot7" class="info"></textarea>
+            <button id="saveSlot7" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">4pm</div>
+            <textarea id="slot8" class="info"></textarea>
+            <button id="saveSlot8" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="time-block">5pm</div>
+            <textarea id="slot9" class="info"></textarea>
+            <button id="saveSlot9" class="saveBtn" saveBtn:Hover>Save</button>
+          </div>  
+        </div>
+
+             
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="java.js"></script>
+    <script src="script.js" type="text/javascript"></script>
     <script src ="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
-    <script type="text/javascript"></script>
   </body>
 </html>
